@@ -6,7 +6,7 @@ class Snake < Formula
   sha256 "ba549db31ece768063767f1d59b88f708ec28d7a437be304939ddea26e611dee"
   license "MIT"
 
-  depends_on "python@3.12"
+  depends_on "python@3.14"
 
   def install
     virtualenv_install_with_resources
@@ -17,4 +17,3 @@ class Snake < Formula
     assert_match version.to_s, shell_output("#{bin}/snake --version")
   end
 end
-
